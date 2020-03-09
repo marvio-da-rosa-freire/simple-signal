@@ -38,8 +38,8 @@ function getJsonReponse(data, to, doIt) {//get json reponse in xhttp
         {
             var a = this.responseText;
 
-                var b= a.replace(/'/g, '"');
-                doIt(b);
+                
+                doIt(a);
         }
     };
     xhr.open('POST', to, true);
