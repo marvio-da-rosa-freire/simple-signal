@@ -6,9 +6,9 @@
 
 
 //binding un model que sera observé
-function Binding(val) {//TODO: type de binding: text, class, or html dans le cas d'un template
+function Binding(val) {//val = valor to observe
     var self = this;
-    self.elementBindings = [];//ne peut pas contenir les elements à binder
+    self.elementBindings = [];
     if(typeof val==='undefined'){
         self.obj = {property:''};
         self.value = self.obj.property;
