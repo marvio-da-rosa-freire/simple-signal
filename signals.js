@@ -1,12 +1,12 @@
 /**
- * Created by tringola on 13/02/2020.
+ * Created by Marvio Da Rosa Freire on 13/02/2020.
  */
 
 
 
-function Binding(val) {//TODO: type de binding: text, class, or html dans le cas d'un template
+function Binding(val) {
     var self = this;
-    self.elementBindings = [];//ne peut pas contenir les elements à binder
+    self.elementBindings = [];
     if(typeof val==='undefined'){
         self.obj = {property:''};
         self.value = self.obj.property;
