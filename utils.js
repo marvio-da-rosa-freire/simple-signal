@@ -36,10 +36,7 @@ function getJsonReponse(data, to, doIt) {//get json reponse in xhttp
     {
         if (this.readyState == 4 && this.status == 200)
         {
-            var a = this.responseText;
-
-                
-                doIt(a);
+             doIt(this.responseText);
         }
     };
     xhr.open('POST', to, true);
