@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        </head>
+<body>
+
+<div id="test">
+    <div>
+        <input data-bind ="html" type=text id="myText1">
+        <input data-bind ='test' type=text id="myText2">
+        <span id="myDomElement"></span>
+    </div>
+</div>
+<script src="../binding_0.1.js"></script>
+<script src="../List.js"></script>
+<script>
+    var myInputElement1 = document.getElementById("myText1");
+    var myInputElement2 = document.getElementById("myText2");
+    var myDOMElement = document.getElementById("myDomElement");
+    var obj = new Binding('tete');
+        obj.addBinding(myInputElement1, "value", "keyup")
+        .addBinding(myInputElement2, "value", "keyup")
+        .addBinding(myDOMElement, "innerText");
+var test = document.getElementById('test');
+    //obj.property = 456;
+var list = new List();
+</script>
+</body>
+</html>
