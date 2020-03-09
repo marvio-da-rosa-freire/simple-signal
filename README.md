@@ -1,1 +1,1 @@
-# yaf-observer
+# another very simple observer
