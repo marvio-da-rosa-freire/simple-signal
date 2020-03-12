@@ -31,11 +31,13 @@ function Binding(val) {//val = valor to observe
         self.obj = {property:''};
         self.value = self.obj.property;
         self.obj.property=self.value;
+        return self;
     }
     else{
         self.obj = {property:val};
         self.value = val;
         self.obj.property=self.value;
+        return self;
     }
 }
 
