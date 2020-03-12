@@ -66,6 +66,9 @@ Binding.prototype.addBinding = function(element, attribute, event){
     self.elementBindings.push(binding);
         element[attribute] = self.value;
         return self
+    /**
+    *TODO: make computed binding
+    **/
 };
 
 
